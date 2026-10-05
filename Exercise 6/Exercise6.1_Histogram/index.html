@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Energy Consumption</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/visualisation.css" />
+</head>
+<body>
+  <header>
+    <h1>TV Energy Consumption</h1>
+  </header>
+
+  <main>
+    <h2>Energy Consumption for different TV screen types and sizes</h2>
+    <p class="subtitle">TV's vary considerably in energy consumption.</p>
+
+    <!-- Filter buttons (Exercise 6.2) -->
+    <div id="filters_screen"></div>
+
+    <!-- Histogram -->
+    <div id="histogram"></div>
+
+    <!-- Scatterplot (Exercise 6.3) -->
+    <div id="scatterplot" class="responsive-svg-container"></div>
+
+    <div class="source">
+      <h3>Data source</h3>
+      <p>
+        <a href="https://reg.energyrating.gov.au/" target="_blank">
+          Energy Rating Data for household appliances – Televisions
+        </a>
+      </p>
+      <p>Downloaded Jan 2026</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© Data Visualisation Week 6</p>
+  </footer>
+
+  <!-- Script order matters -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/load-data.js"></script>
+  <script src="js/shared-constants.js"></script>
+  <script src="js/interaction.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+</body>
+</html>

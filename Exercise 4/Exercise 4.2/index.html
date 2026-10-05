@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliance Energy Consumption - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Menu -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="assests/img/logo.png" alt="Power Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="televisions.html">Televisions</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Step 2 target: h1 will turn green via D3 -->
+    <h1>Appliance Energy Consumption in Australia</h1>
+    
+    <div class="container">
+      <p>
+        In Australia, residential appliance energy consumption accounts for a significant portion of household utility bills and carbon footprints. As energy efficiency standards evolve under the Nationwide House Energy Rating Scheme (NatHERS) and the Equipment Energy Efficiency (E3) program, understanding appliance star ratings is key to making informed choices.
+      </p>
+      <!-- Step 3: D3 will append the new <p> here -->
+    </div>
+
+    <!-- Step 4 target: SVG element where D3 appends the green rectangle -->
+    <section style="margin-top: 30px;">
+      <h2>Exercise 4.2: D3 SVG Manipulation</h2>
+      <svg id="d3-canvas" width="400" height="150" style="border: 1px solid #ccc; background-color: #f1f5f9; display: block; border-radius: 6px;"></svg>
+    </section>
+
+    <!-- FAQ Section (from Exercise 0.2) -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What is the Australian Energy Rating Label?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>The Energy Rating Label helps consumers compare the energy efficiency and running costs of appliances across Australia using a simple star rating scale.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How much can energy-efficient appliances save?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Choosing an appliance with more stars can save hundreds of dollars over its operating lifespan compared to baseline models.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Ngai Jun Min | Developed with Generative AI assistance</p>
+  </footer>
+
+  <!-- Accordion script -->
+  <script src="assets/js/script.js"></script>
+
+  <!-- Step 1: Load D3 Library v7 and your new main.js file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

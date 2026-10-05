@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COS30045 Exercise 4.1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    svg {
+      background-color: #e0f2fe;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      display: block;
+    }
+    .annotated-img {
+      max-width: 100%;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+    .ai-note {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercise 4.1: SVG Shapes and Coordinates</h1>
+
+    <!-- SVG Drawing (Step 1, Step 3, and Step 4) -->
+    <svg width="600" height="450">
+      
+      <!-- Garden Grass (rect) -->
+      <rect x="0" y="300" width="600" height="150" fill="#22c55e" />
+
+      <!-- Sun (circle with custom stroke) -->
+      <circle cx="500" cy="80" r="45" fill="#facc15" stroke="#f59e0b" stroke-width="4" />
+
+      <!-- Tree: Trunk (rect) and Leaves (ellipse) -->
+      <rect x="75" y="240" width="25" height="90" fill="#78350f" />
+      <ellipse cx="87" cy="215" rx="45" ry="55" fill="#15803d" />
+
+      <!-- House Base (rect) -->
+      <rect x="200" y="200" width="200" height="150" fill="#c2410c" />
+
+      <!-- Roof (polygon) -->
+      <polygon points="180,200 300,85 420,200" fill="#991b1b" stroke="#7f1d1d" stroke-width="3" />
+
+      <!-- Chimney (rect) -->
+      <rect x="350" y="110" width="30" height="50" fill="#7c2d12" />
+
+      <!-- Smoke Trail (line with custom dashed stroke) -->
+      <line x1="365" y1="100" x2="365" y2="45" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 4" />
+
+      <!-- Front Door (rect) and Knob (circle) -->
+      <rect x="275" y="270" width="50" height="80" fill="#292524" />
+      <circle cx="315" cy="315" r="4" fill="#fbbf24" />
+
+      <!-- Winding Garden Path (path) -->
+      <path d="M 275,350 Q 240,400 200,450 L 330,450 Q 340,400 325,350 Z" fill="#d97706" />
+
+      <!-- Step 4: Grouped Windows with Shared Styles & Transform -->
+      <g fill="#93c5fd" stroke="#0f172a" stroke-width="3">
+        <!-- Window 1(connected)): Direct placement -->
+        <rect x="225" y="225" width="40" height="40" rx="4" />
+
+        <!-- Window 2(connected)): Positioned using transform="translate(x, y)" -->
+        <rect x="0" y="0" width="40" height="40" rx="4" transform="translate(335, 225)" />
+      </g>
+
+      <!-- Text Label -->
+      <text x="430" y="335" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0f172a">House</text>
+    </svg>
+
+    <!-- Step 3 AI Declaration -->
+    <p class="ai-note"><em>Note: SVG artwork structure and layout developed with generative AI assistance.</em></p>
+
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+    <!-- Step 2: Coordinate System Annotation -->
+    <h2>Step 2: Coordinate System Annotation</h2>
+    <img src="image\coordinates_annotated.jpg" alt="Annotated SVG Coordinate System" class="annotated-img" />
+  </div>
+</body>
+</html>

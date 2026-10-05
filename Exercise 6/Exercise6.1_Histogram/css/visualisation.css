@@ -1,0 +1,32 @@
+#histogram svg,
+#scatterplot svg {
+  background-color: #fffaf0;
+  display: block;
+}
+
+/* Responsive SVG: the scatterplot only has a viewBox, so it scales to the container */
+.responsive-svg-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+.responsive-svg-container svg {
+  width: 100%;
+  height: auto;
+}
+
+.axis text {
+  font-size: 10px;
+  fill: #333;
+}
+
+.axis-label {
+  font-size: 12px;
+  fill: #333;
+}
+
+.legend text {
+  font-size: 12px;
+  fill: #333;
+}

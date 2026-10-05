@@ -1,0 +1,107 @@
+:root {
+  --primary-gold: #eab308;
+  --dark-gold: #ca8a04;
+  --bg-light: #fefce8;
+  --text-dark: #3f2e21;
+  --border-color: #d1d5db;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--bg-light);
+  border-bottom: 2px solid var(--primary-gold);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+.logo-link img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-dark);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: var(--primary-gold);
+  color: #000;
+}
+
+.nav-links a.active {
+  background-color: var(--dark-gold);
+  color: var(--white);
+}
+
+/* Main Content Layout */
+main {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Step 2: Responsive SVG Container */
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 40px;
+}
